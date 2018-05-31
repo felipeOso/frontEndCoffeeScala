@@ -1,0 +1,18 @@
+<h1>Coffee Registrados</h1>
+<div class="clear"></div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Granja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let item of coffees">
+      <td>{{item.nombre}}</td>
+      <td>{{item.precio}}</td>
+      <td>{{item.granja}}</td>
+    </tr>
+  </tbody>
+</table>
